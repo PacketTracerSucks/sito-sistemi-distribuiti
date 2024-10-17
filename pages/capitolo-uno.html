@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Progetto TPSIT" />
+    <meta name="author" content="Lorenzo Ledda, 5°A" />
+    <title>TPSIT - Cosa Sono i Sistemi Distribuiti</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Icone -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- CSS (Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Barra di Navigazione -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">I Sistemi Distribuiti</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="../index.html#portfolio">Capitoli</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="../index.html#about">Chi sono</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Copertina Principale -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Titolo della Copertina-->
+            <h1 class="masthead-heading text-uppercase mb-0">1. <br> Cosa sono i sistemi distribuiti</h1>
+            <!-- Icona Divisore -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-computer"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Sottotitolo della Copertina-->
+            <p class="mb-0">Tecnologie e Progettazione di Sistemi Informatici e Telecomunicazioni</p>
+        </div>
+    </header>
+    <!-- Sezione dei capitoli-->
+    <section class="page-section bg-secondary text-white" style="padding-left: 12%; padding-right: 12%">
+        <h1>Introduzione</h1>
+        <div class="row p-0 m-0">
+            <p class="col-sm-12 col-lg-6">
+                I sistemi informativi hanno subito una significativa evoluzione, passando da architetture centralizzate a
+                modelli distribuiti, che rispondono meglio alle esigenze di decentralizzazione e cooperazione delle
+                organizzazioni moderne. <br><br> Nei sistemi centralizzati, tutte le applicazioni operano su un singolo processore o
+                host, che rappresenta l'unico componente autonomo condiviso tra vari utenti. Tutte le risorse di questo
+                sistema sono accessibili e utilizzate da chiunque vi si connetta. <br><br> In un sistema distribuito, invece, le
+                applicazioni sono suddivise in più processi, eseguiti parallelamente su più unità di elaborazione autonome.
+                Questi sistemi sono formati dall'unione di CPU, sistemi di memorizzazione e periferiche diverse.
+            </p>
+            <div class="col-sm-12 col-lg-6"><img class="img-thumbnail" src="../assets/img/portfolio/Sistemi Distribuiti e Centralizzati.png"/></div>        
+        </div>
+    </section>
+    <section class="page-section bg-warning" style="padding-left: 12%; padding-right: 12%">
+        <h3>Quando un sistema è considerato distribuito e i ruoli delle sue applicazioni</h3>
+        <p>Un sistema è considerato distribuito quando si verificano almeno una delle seguenti due condizioni:</p>
+        <ol>
+            <li><strong>Elaborazione distribuita</strong>: le applicazioni risiedono su più host che collaborano tra
+                loro.</li>
+            <li><strong>Base di dati distribuita</strong>: i dati sono distribuiti su diversi host.</li>
+        </ol>
+        <p>Un sistema distribuito appare all'utente come un <strong>singolo sistema coerente</strong>, anche se le
+            macchine coinvolte
+            sono autonome. Questo è reso possibile da un'infrastruttura hardware e software che gestisce le operazioni
+            in modo trasparente per l'utente.</p>
+        
+        <div class="row p-0 m-0 pt-3">
+            <div class="col-sm-12 col-lg-6">
+                <p>Le applicazioni in un sistema distribuito possono assumere <strong>ruoli</strong> diversi:</p>
+                <ul>
+                    <li> <strong>Client</strong>: un'applicazione è cliente quando utilizza servizi forniti da altre
+                        applicazioni.</li>
+                    <li> <strong>Server</strong>: l'applicazione diventa un servente quando offre servizi ad altre applicazioni.
+                    </li>
+                    <li> <strong>Actor</strong>: l'applicazione può essere sia client che server, a seconda del contesto in cui
+                        opera.</li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-lg-6"><img class="img-thumbnail" src="../assets/img/portfolio/client-server.png"/></div>
+        </div>
+    </section>
+    <section class="page-section bg-primary text-white" style="padding-left: 12%; padding-right: 12%">
+        <h3>Classificazione dei sistemi distribuiti</h3>
+        <p> Esistono varie categorie di sistemi distribuiti, basate sull'utilizzo e le finalità:</p>
+        <ol>
+            <li> <strong>Sistemi di calcolo distribuiti</strong>: configurati per il calcolo ad alte prestazioni, come il cluster computing e il grid computing.</li>
+            <li> <strong>Sistemi informativi distribuiti</strong>: il web ne è l'esempio più ampio, e le tecnologie mobili hanno accelerato l'evoluzione di questi sistemi, che combinano tecnologie legacy e moderne.</li>
+            <li> <strong>Sistemi distribuiti pervasivi</strong>: si tratta di sistemi con connessioni di rete wireless, spesso integrati in dispositivi di uso quotidiano come i sistemi domestici o i wearable computing.</li>
+        </ol>
+    </section>
+
+    <div class="row p-0 m-0">
+        <section class="page-section bg-success text-white col-sm-12 col-md-6 col-lg-6" style="padding-left: 12%; padding-right: 12%">
+            <h3>Vantaggi</h3>
+            <p>I sistemi distribuiti offrono numerosi vantaggi:</p>
+            <ul>
+                <li> <strong>Affidabilità</strong> : la ridondanza intrinseca permette al sistema di continuare a funzionare
+                    anche in caso di guasto di un componente.</li>
+                <li> <strong>Eterogeneità</strong>: possono integrare componenti hardware e software diversi.
+                    l'evoluzione di questi sistemi, che combinano tecnologie legacy e moderne.</li>
+                <li> <strong>Trasparenza</strong>: l'utente vede l'insieme come un unico sistema.</li>
+                <li><strong>Economicità</strong>: i costi di una rete di PC sono inferiori rispetto a un mainframe.</li>
+                <li><strong>Collaborazione e connettività</strong>: consente la condivisione di risorse costose, come stampanti speciali e sistemi di storage.</li>
+                <li><strong>Tolleranza ai guasti</strong>: le risorse replicate garantiscono una certa resilienza in caso di problemi.</li>
+            </ul>
+        </section>
+        <section class="page-section bg-danger text-white col-sm-12 col-md-6 col-lg-6 mb-0 pb-0" style="padding-left: 12%; padding-right: 12%">
+            <h3>Svantaggi</h3>
+            <p>D'altra parte, vi sono anche degli svantaggi:</p>
+            <ul>
+                <li> <strong>Produzione di software</strong>:richiede competenze specifiche e nuovi linguaggi di programmazione.</li>
+                <li> <strong>Complessità</strong>: l'hardware e le tecnologie di interconnessione sono più complessi rispetto ai sistemi centralizzati.</li>
+                <li> <strong>Sicurezza</strong>: la connessione di più host introduce rischi di accesso non autorizzato e intercettazioni.</li>
+                <li><strong>Comunicazione</strong>: richiede infrastrutture di telecomunicazione avanzate, e con l'aumento degli utenti aumenta
+                    anche la richiesta di banda trasmissiva. </li>
+            </ul>
+            <p class="text-center pt-5 mt-5">
+                <a href="../index.html" class="btn btn-primary m-2"><i class="fas fa-arrow-left"></i> Indietro </a>
+                <a href="capitolo-due.html" class="btn btn-primary m-2">Avanti <i class="fas fa-arrow-right"></i></a>
+            </p>
+        </section>
+    </div>
+
+    
+    <!-- Sezione Copyright -->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Nessun Copyright 2024</small></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

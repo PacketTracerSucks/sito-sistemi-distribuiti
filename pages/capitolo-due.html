@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Progetto TPSIT" />
+  <meta name="author" content="Lorenzo Ledda, 5°A" />
+  <title>TPSIT - Evoluzione Sistemi Distribuiti</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Icone -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- CSS (Bootstrap)-->
+  <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+  <!-- Barra di Navigazione -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">I Sistemi Distribuiti</a>
+      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="../index.html#portfolio">Capitoli</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="../index.html#about">Chi sono</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Copertina Principale -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+      <!-- Titolo della Copertina-->
+      <h1 class="masthead-heading text-uppercase mb-0">
+        2. <br />
+        Evoluzione dei sistemi distribuiti
+      </h1>
+      <!-- Icona Divisore -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-computer"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Sottotitolo della Copertina-->
+      <p class="mb-0">
+        Tecnologie e Progettazione di Sistemi Informatici e Telecomunicazioni
+      </p>
+    </div>
+  </header>
+  <!-- Sezione dei capitoli-->
+  <section class="page-section bg-secondary text-white" style="padding-left: 12%; padding-right: 12%">
+    <h1>Evoluzione dei sistemi distribuiti</h1>
+    <div class="row">
+      <p class="col-sm-12 col-lg-6 col-md-6">
+        L'evoluzione dei sistemi distribuiti ha coinvolto sia l'hardware che
+        il software. Per quanto riguarda l'hardware, si è passati dall'uso di
+        singole CPU a sistemi dotati di più processori, migliorando
+        notevolmente la capacità di calcolo. La
+        <strong>tassonomia di Flynn</strong> (1972) è uno dei principali
+        modelli per classificare le architetture hardware, basato su due
+        flussi fondamentali: il flusso delle istruzioni e il flusso dei dati.
+      </p>
+      <div class="col-sm-12 col-lg-6 col-md-6 my-3">
+        <img class="img-thumbnail" src="../assets/img/portfolio/classificazione flynn.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section bg-warning" style="padding-left: 12%; padding-right: 12%">
+    <h3>Classificazione delle architetture secondo Flynn</h3>
+    <p>
+      La tassonomia di Flynn classifica i sistemi distribuiti in base alla
+      gestione del flusso delle istruzioni e dei dati:
+    </p>
+    <ol>
+      <li>
+        <strong>SISD</strong> (Single Instruction, Single Data): un unico
+        processore esegue una singola istruzione su un singolo flusso di dati.
+        È il modello tradizionale dei sistemi centralizzati.
+      </li>
+      <div class="col-sm-12 col-lg-8 col-md-8 my-3">
+        <img class="img-thumbnail" src="../assets/img/portfolio/SISD.png" />
+      </div>
+      <li>
+        <strong>SIMD</strong> (Single Instruction, Multiple Data): un unico
+        processore esegue la stessa istruzione su diversi flussi di dati,
+        utile in applicazioni come l'elaborazione grafica.
+      </li>
+      <div class="col-sm-12 col-lg-8 col-md-8 my-3">
+        <img class="img-thumbnail" src="../assets/img/portfolio/SIMD.png" />
+      </div>
+      <li>
+        <strong>MISD</strong> (Multiple Instruction, Single Data): più
+        processori eseguono istruzioni diverse sullo stesso flusso di dati.
+        Questo modello è meno comune.
+      </li>
+      <div class="col-sm-12 col-lg-8 col-md-8 my-3">
+        <img class="img-thumbnail" src="../assets/img/portfolio/MISD.png" />
+      </div>
+      <li>
+        <strong>MIMD</strong> (Multiple Instruction, Multiple Data): più
+        processori eseguono istruzioni diverse su flussi di dati diversi,
+        permettendo un'elevata flessibilità e parallelismo.
+      </li>
+    </ol>
+  </section>
+
+  <section class="page-section bg-primary text-white" style="padding-left: 12%; padding-right: 12%">
+    <h3>Sistemi MIMD</h3>
+    <p>
+      Nelle architetture <strong>MIMD</strong>, sia il flusso delle istruzioni
+      che quello dei dati sono multipli, permettendo a ogni processore di
+      eseguire le proprie istruzioni su propri dati. Il parallelismo fisico
+      offre grande flessibilità, poiché ogni CPU evolve in maniera autonoma.
+    </p>
+  </section>
+
+  <section class="page-section bg-success text-white pb-1" style="padding-left: 12%; padding-right: 12%">
+    <h3>MIMD: multiprocessori e multicomputer</h3>
+    <div class="row mt-5">
+      <p class="col-sm-12 col-lg-6">
+        <strong>Multiprocessori</strong>: In un'architettura multiprocessore,
+        i processori condividono una memoria comune e collaborano per
+        l'esecuzione dei compiti. Questa struttura è efficiente per la
+        comunicazione interna, ma la gestione della memoria condivisa diventa
+        più complessa con l'aumento dei processori.
+      </p>
+      <div class="col-sm-12 col-lg-6">
+        <img class="img-thumbnail" src="../assets/img/portfolio/MIMD multiprocessore.png" />
+      </div>
+    </div>
+    <div class="row mt-5">
+      <p class="col-sm-12 col-lg-6">
+        <strong>Multicomputer</strong>: In un'architettura multicomputer, ogni
+        processore ha la propria memoria locale e comunica con gli altri
+        processori tramite rete, offrendo una maggiore scalabilità. Tuttavia,
+        questo modello introduce complessità nella gestione delle comunicazioni
+        e nella sincronizzazione.
+      </p>
+      <div class="col-sm-12 col-lg-6">
+        <img class="img-thumbnail" src="../assets/img/portfolio/MIMD multicomputer.png" />
+      </div>
+    </div>
+    <p class="mt-5 text-center">
+      <a href="capitolo-uno.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Indietro
+      </a>
+      <a class="btn btn-primary">Avanti <i class="fas fa-arrow-right"></i></a>
+    </p>
+  </section>
+  <!-- Sezione Copyright -->
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Nessun Copyright 2024</small>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
